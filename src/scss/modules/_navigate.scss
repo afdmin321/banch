@@ -1,0 +1,92 @@
+.navigate {
+  background-color: $bg-block;
+  min-height: 40px;
+  padding: 0 10px;
+  color: white;
+  display: flex;
+  border-radius: 10px;
+  gap: 0 50px;
+  position: sticky;
+  top: 0;
+  &__button-menu {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &-underline {
+      display: block;
+      height: 1px;
+      background-color: wheat;
+      width: 100%;
+      transition: all 0.1s;
+      &.close__button-menu {
+        background-color: transparent;
+      }
+      &.close__button-menu::after {
+        transform: rotate(50deg);
+        top: 20px;
+      }
+      &.close__button-menu::before {
+        transform: rotate(-50deg);
+        top: 20px;
+      }
+      &::after {
+        transition: all 0.1s;
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: wheat;
+        width: 100%;
+        top: 8px;
+        left: 0;
+      }
+      &::before {
+        transition: all 0.1s;
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: wheat;
+        width: 100%;
+        bottom: 8px;
+        left: 0;
+      }
+    }
+  }
+  &__button-call {
+    background-color: $bg-button !important;
+    padding: 10px !important;
+    border-radius: 5px;
+  }
+
+  &__list {
+    padding: 8px 0 !important;
+    display: none;
+    flex-direction: column;
+    gap: 7px 0;
+    display: none;
+
+    &_active {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .navigate {
+    padding: 0 20px;
+    &__button-menu {
+      display: none;
+    }
+    &__list {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0 20px;
+      width: 100%;
+      opacity: 1;
+      height: auto;
+      display: flex;
+    }
+  }
+}

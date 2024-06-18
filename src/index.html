@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Скамейки" })
+  <body>
+    <div class="page">
+      @@include('html/header.html', {}) @@include('html/navigate.html', {})
+      <main class="main">
+        @@include('html/primary.html', {}) @@include('html/products.html', {})
+        @@include('html/advantages.html', {}) @@include('html/delivery.html',
+        {})
+      </main>
+      @@include('html/footer.html', {}) @@include('html/popup-order.html')
+      @@include('html/popup-discount.html') @@include('html/call.html', {})
+      @@include('html/sent.html', {})
+    </div>
+    @@include('html/product_template.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<div class="popup feature" id="popupOrder">
+  <div class="popup__cover"></div>
+  <div class="popup__container">
+    <button type="button" class="popup__button-close button-close button">
+      &#10006;
+    </button>
+    <form class="popup__form form" name="newOrder" id="order" novalidate>
+      <div class="popup__title">Оплата происходит через менеджера.</div>
+      <div class="popup__title">
+        Оставте свои контактные данные мы вам перезвоним в ближайшее время
+      </div>
+      <label class="popup__label label">
+        <input
+          type="text"
+          name="order_name"
+          placeholder="Ваше имя"
+          class="popup__input input"
+        />
+        <span class="popup__error error"></span>
+      </label>
+      <label class="popup__label label">
+        <input
+          type="url"
+          name="order_phone"
+          placeholder="Номер телефона"
+          class="popup__input input"
+        />
+        <span class="popup__error error"></span>
+      </label>
+      <button
+        type="submit"
+        name="order_submite"
+        class="popup__submite submite button"
+      >
+        Оформить заказ
+      </button>
+    </form>
+  </div>
+</div>

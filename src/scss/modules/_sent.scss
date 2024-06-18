@@ -1,0 +1,31 @@
+.sent {
+  display: flex;
+  gap: 0 20px;
+  max-width: 400px;
+  padding: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000b9;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  z-index: -100;
+  opacity: 0;
+  transition: opacity 0.2s;
+  &__active {
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+  &__text {
+    margin: 0;
+    padding: 20px;
+    max-width: 280px;
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+  }
+}

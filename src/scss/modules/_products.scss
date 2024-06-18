@@ -1,0 +1,36 @@
+.products {
+  background: -webkit-linear-gradient(0deg, #ffffff, #c9c8ab, #ffffff);
+  background: linear-gradient(0deg, #ffffff, #c9c8ab, #ffffff);
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 15px;
+    justify-content: center;
+    max-height: 1200px;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+  &__title {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 0 40px;
+  }
+}
+
+@media (min-width: 650px) {
+  .products {
+    padding: 80px 0 150px;
+    &__title {
+      font-size: 24px;
+      margin: 80px 0 50px;
+    }
+  }
+}
+@media (min-width: 860px) {
+  .products {
+    padding: 100px 0 250px;
+    &__title {
+      margin: 100px 0 50px;
+    }
+  }
+}

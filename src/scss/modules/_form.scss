@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px 0;
+  width: 100%;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 58px;
+}
+.input {
+  height: 40px;
+  background: rgba(255, 255, 255, 0.651);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+  }
+}
+.error {
+  padding: 3px 0 0 10px;
+}
+.submite {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  background: transparent;
+  border-radius: 5px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: inherit;
+}
+@media (min-width: 850px) {
+  .form {
+    gap: 5px 0;
+  }
+}
+
