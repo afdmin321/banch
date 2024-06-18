@@ -5,7 +5,7 @@
     align-items: center;
     font-size: 13px;
     font-weight: 600;
-    color: rgb(116, 116, 116);
+    color: rgb(44, 44, 44);
   }
   &__whatsapp,
   &__telegram {
@@ -29,7 +29,7 @@
       position: absolute;
       top: -1px;
       left: -20px;
-      opacity: 0.6;
+    
     }
   }
   &__email {
@@ -43,7 +43,7 @@
       position: absolute;
       top: -1px;
       left: -19px;
-      opacity: 0.6;
+ 
     }
   }
 }
