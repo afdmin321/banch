@@ -33,7 +33,7 @@
     align-items: center;
     font-size: 25px;
     font-weight: bold;
-    background-color: rgb(0, 0, 134);
+    background-color: $bg-block;
     color: white;
   }
   &__text {
@@ -116,10 +116,9 @@
   }
 }
 @media (min-width: 1200px) {
-    .advantages {
-    
-      &__list {
-        gap: 40px 150px;
-      }
+  .advantages {
+    &__list {
+      gap: 40px 150px;
     }
   }
+}

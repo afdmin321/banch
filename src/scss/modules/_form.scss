@@ -20,7 +20,7 @@
   color: rgba(0, 0, 0, 0.7);
   font-size: 16px;
   &::placeholder {
-    color: rgba(0, 0, 0, 0.7);
+    color: $bg-block;
     font-size: 16px;
   }
 }
@@ -37,10 +37,10 @@
   justify-content: center;
   align-items: center;
   font-size: inherit;
+  color: inherit;
 }
 @media (min-width: 850px) {
   .form {
     gap: 5px 0;
   }
 }
-

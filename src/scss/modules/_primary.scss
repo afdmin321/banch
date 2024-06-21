@@ -1,12 +1,13 @@
 .primary {
-  background: -webkit-linear-gradient(0deg, #ffffff, #d6d6d6, #090f80);
-  background: linear-gradient(0deg, #ffffff, #d6d6d6, #090f80);
+  background: -webkit-linear-gradient(0deg, #ffffff, #d6d6d6, #ccf5d5);
+  background: linear-gradient(0deg, #ffffff, #d6d6d6, #ccf5d5);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px 0;
+  color: #06483A;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -90,7 +91,7 @@
   .primary {
     &__img {
       width: 650px;
-      top: -100px;
+      top: -200px;
     }
   }
 }

@@ -37,7 +37,7 @@ const emailPatt =
 const productContainer = page.querySelector(".products__list");
 catalogList.forEach((product) => {
   const card = new Card(product, "#product-template");
-  const newCard = card.generateCard()
+  const newCard = card.generateCard();
   productContainer.append(newCard);
 });
 
@@ -119,7 +119,7 @@ const submite = (evt) => {
   });
   try {
     fetch(
-      `https://api.telegram.org/bot7001021053:AAFAAe6a_bspk0Mf1YlfVXbSsnWDXoEUiL8/sendMessage?chat_id=${1478881318}&parse_mode=html&text=НОВЫЙ ЗАКАЗ ГОРКИ ИЗ НЕРЖАВЕЙКИ -${JSON.stringify(
+      `https://api.telegram.org/bot7001021053:AAFAAe6a_bspk0Mf1YlfVXbSsnWDXoEUiL8/sendMessage?chat_id=${5436051423}&parse_mode=html&text=НОВЫЙ ЗАКАЗ СКАМЕЙКИ -${JSON.stringify(
         data
       )}`
     ).then((res) => console.log(res));
@@ -164,6 +164,9 @@ const openPopupOrder = () => {
   coverOrderPopup.addEventListener("click", closedPopupOrder);
   const formOrder = page.querySelector("#order");
   toggleButtonSubmite(formOrder);
+  if (Array.from(navigate.classList).find((el) => el === "active")) {
+    toggleMenuNavigation();
+  }
 };
 
 const closedPopupDiscount = () => {
@@ -186,10 +189,14 @@ const openPopupDiscount = () => {
   coverDiscountPopup.addEventListener("click", closedPopupDiscount);
   const formDiscount = page.querySelector("#discount");
   toggleButtonSubmite(formDiscount);
+  if (Array.from(navigate.classList).find((el) => el === "active")) {
+    toggleMenuNavigation();
+  }
 };
 
 const toggleMenuNavigation = () => {
   navigate.classList.toggle("active");
+  console.log(navigate.classList);
   listNavigate.classList.toggle("navigate__list_active");
   buttonMenuViev.classList.toggle("close__button-menu");
 };
@@ -211,6 +218,9 @@ const openCall = () => {
   areaClosing.classList.add("call__cover_visible");
   areaClosing.addEventListener("click", colsedCall);
   callClosed.addEventListener("click", colsedCall);
+  if (Array.from(navigate.classList).find((el) => el === "active")) {
+    toggleMenuNavigation();
+  }
 };
 
 buttonCall.addEventListener("click", openCall);
